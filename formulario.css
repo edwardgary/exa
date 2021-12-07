@@ -1,0 +1,230 @@
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 7%;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 10%;
+} 
+
+#check{
+    display: inline-block;
+}
+
+/* Elementos de tag <fieldset>*/
+fieldset {
+    border: 0;
+}
+
+/* Elemento de tag <body> */
+body{
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
+.verticalLine {
+  border-left: thick solid #ff0000;
+}
+ #contenido {
+        background-color:#ddd;
+        float:left;
+        height:500px;
+        padding:10px;
+        width:560px;
+      }
+      #menu {
+        background-color:#999;
+        float:left;
+        height:480px;
+        padding:20px;
+        width:180px;
+      }
+     .fdizquierda {float: left; width: 50%;}
+.fdderecha {float: right; width:50%;}
+-----------------------------------------------------
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+
+html, body {
+  background: linear-gradient(to left, #fd746c , #ff9068);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 5vw;
+  letter-spacing: 6px;
+}
+
+.pad {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+  box-shadow: 0 8px 6px -6px black;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  user-select: none;
+  
+  &:hover {
+    background-color: lighten(#444, 10%);
+    cursor: pointer;
+  }
+  
+  &:active {
+    background-color: darken(#444, 10%);
+    transform: scale(1.1);
+    transition: all .2s;
+  }
+}
+
+.active {
+  background-color: darken(#444, 10%);
+  transform: scale(1.1);
+  transition: all .2s;
+}
+
+.pad-1, .pad-2, .pad-3, .pad-4  { 
+  border: 2px solid #2ecc71; 
+}
+
+.pad-5, .pad-6, .pad-7, .pad-8 { 
+  border: 2px solid #E5446D; 
+}
+
+.pad-9, .pad-10, .pad-11, .pad-12 { 
+  border: 2px solid #1abc9c; 
+}
+.circulo {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  margin:0px auto;
+  padding:3%
+}
+
+.circulo > h2 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
